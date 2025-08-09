@@ -1,19 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
-import {Container, Typography} from '@mui/material';
-import TodoItem from "./TodoItem";
+import {BrowserRouter} from 'react-router-dom';
+import TodoListComponent from "./todolist/TodoListComponent";
 
 function App() {
-  return (
-    <><Container> 
-      <Typography variant="h3" component="h3">
-        Hello World
-      </Typography>
-        <TodoItem text='Hallo' completed={false}></TodoItem>
-      </Container></>
-  );
+    return (
+        <TodoListComponent/>
+    );
 }
 
 export default App;
